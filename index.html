@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- AOS library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    
+   <!-- css link -->
+    <link href="../dist/output.css" rel="stylesheet">
+
+    <title>Ronel Florida</title>
+</head>
+<body>
+    <header class="w-full h-screen pb-[224px] mobileMin:py-[224px] bg-cover bg-no-repeat bg-center overflow-hidden relative">
+        <!-- navigation pt-[5.6875rem] w-128 max-w-1/2-->
+        <nav class="w-full mobile:h-auto mx-auto mobileMin:bg-dark mobileMin:drop-shadow-md mobileMin:py-[26px] mobile:pt-[3.125rem] mb-[6.875rem] flex items-center justify-center mobileMin:fixed mobileMin:top-0 mobileMin:left-1/2 mobileMin:translate-x-[-50%] z-20 animate-[wiggle_2s_ease-in-out]">
+            <ul class="nav-link flex items-center justify-center">
+                <!-- <li id="close-btn" class="hidden mobile:block"><i class="fa-solid fa-xmark text-white text-4xl"></i></li> -->
+                <li><a href="#" class="text-green">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#work">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+           </ul>
+           <div class="btn-container bg-dark w-full h-auto hidden mobile:flex justify-center py-2 fixed top-0 z-40 drop-shadow-md animate-[wiggle_2s_ease-in-out]">
+                <button id="close-btn" class="nav-btn mobile:hidden bg-transparent px-[10px] py-[0.3125rem] border border-background rounded-lg hover:bg-green hover:border-green animate-[content_2s_ease-in-out]">
+                    <i class="fa-solid fa-xmark text-white text-base"></i>
+                </button>
+                <button id="menu-btn" class="nav-btn hidden mobile:block bg-transparent px-[10px] py-[0.3125rem] border border-background rounded-lg hover:bg-green hover:border-green animate-[content_2s_ease-in-out]">
+                     <i class="fa-solid fa-bars text-white text-base"></i>
+                </button>
+           </div>
+        </nav>
+
+        <!-- hero section -->
+        <main class="max-w-1/2 w-128 mx-auto flex flex-col items-center">
+            <div class="profile w-[10.625rem] h-[10.625rem] mobile:w-[4.374rem] mobile:h-[4.374rem] mobileL:w-[5.625rem] mobileL:h-[5.625rem] rounded-full border-green border-solid border-4 mb-[2.25rem] animate-[content_1s_ease-in-out]">
+                <img src="../images/profile.png" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="text-center">
+                <h4 class="text-[2.1875rem] tabletL:text-[1.5625rem] mobileL:text-[1.125rem] mb-[0.25rem] font-bold animate-[content_2s_ease-in-out]">HELLO, <span class="text-green">I'M</span></h4>
+                <h1 class="text-[4.1875rem] tabletL:text-[3.125rem] mobileL:text-[1.875rem] mb-[0.375rem] font-bold animate-[content_3s_ease-in-out]">RONEL FLORIDA<span class="text-green">.</span>
+                </h1>
+                <h3 class="text-[1.25rem] tabletL:text-[1.0625rem] mobileL:text-[0.8125rem] font-bold animate-[content_4s_ease-in-out]">FRONT END WEB DEVELOPER</h3>
+            </div>
+
+            <!-- shape -->
+            <div class="box-dot absolute right-0 animate-[dot_2s_ease-in-out]">
+                <img src="../images/box dot.png" alt="" class="w-full h-full">
+            </div>
+            <div class="circle absolute right-[30%] mobileL:w-4 mobile:right-[37%] animate-[circle1_2s_ease-in-out] mobile:animate-[circle1Mobile_2s_ease-in-out]">
+                <img src="../images/circle.png" alt="" class="w-full h-full">
+            </div>
+            <div class="circle absolute left-[10%] mobileL:w-4 bottom-[10%] mobileL:bottom-[37%] animate-[circle2_2s_ease-in-out]">
+                <img src="../images/circle.png" alt="" class="w-full h-full">
+            </div>
+            <div class="triangle absolute left-[10%] top-[40%] w-[74px] h-[74px] mobileL:w-[40px] mobileL:h-[40px] animate-[circle2_2s_ease-in-out]">
+                <img src="../images/triangle.png" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="triangle absolute right-[20%] bottom-[25%] mobileL:bottom-[41%] mobile:bottom-[30%] w-[74px] h-[74px] mobileL:w-[40px] mobileL:h-[40px] animate-[triangle2_2s_ease-in-out]">
+                <img src="../images/triangle.png" alt="" class="w-full h-full">
+            </div>
+        </main>
+        
+    </header>
+
+    <!-- about section -->
+      <section id="about" class="about w-full bg-light-green py-[7.25rem]">
+          <div class="max-w-1/2 w-128 mx-auto">
+                <div class="about-word w-full mb-[4.375rem] flex justify-center items-center" data-aos="fade-in">
+                    <h3 class="title text-dark font-medium">about <span class="text-green">me</span></h3>
+                </div>
+
+                <div class="about-content w-full flex items-start gap-10 tabletL:flex-col">
+                    <div class="left-content w-full tabletL:w-full tabletL:text-left" data-aos="slide-right">
+                        <h5 class="text-[1.25rem] mobile:text-[30px] font-bold font-poppins text-dark mb-[6px]">Lorem ipsum, dolor</h5>
+                        <p class="text-[1rem] mobile:text-[18px] font-poppins font-normal text-dark mb-[26px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                             Eos, dolor necessitatibus omnis est ipsam soluta architecto placeat
+                              laboriosam similique quos odit illo fuga consequatur aspernatur
+                               at provident nobis doloremque officiis rem.
+                        </p>
+                        
+                        <button class="bg-green text-white py-[10px] px-[19px] text-[1rem] font-poppins font-bold uppercase rounded-lg border-0 hover:scale-105 transition-colors">
+                            download my cv
+                        </button>
+                    </div>
+
+                    <div class="skills w-full flex flex-col" data-aos="slide-left">
+                        <h3 class="text-[1.25rem] text-dark font-poppins font-bold uppercase mb-[0.5rem]">
+                            skills
+                        </h3>
+                        <p class="text-dark text-[1rem] font-poppins font-medium capitalize mb-5">front end web technology that i used:</p>
+                        <div class="skills-set flex gap-14 flex-wrap p-4">
+                            <!-- px-[11px] py-[2px] w-[45px] h-[45px]-->
+                            <div class="html w-[45px] h-[45px] rounded flex flex-col items-center justify-center text-white uppercase font-poppins font-medium tracking-wider drop-shadow-lg">
+                                <img src="/images/html.png" alt="" class="w-full mb-1">
+                                <p class="text-[0.8125rem] text-dark font-poppins font-medium capitalize text-center">html</p>
+                            </div>
+                            <div class="css w-[45px] h-[45px] rounded flex flex-col items-center justify-center text-white uppercase font-poppins font-medium tracking-wider drop-shadow-lg">
+                                <img src="/images/css.png" alt="" class="w-full mb-1">
+                                <p class="text-[0.8125rem] text-dark font-poppins font-medium capitalize text-center">css</p>
+                            </div>
+                            <div class="scss w-[45px] h-[45px] rounded flex flex-col items-center justify-center text-white uppercase font-poppins font-medium tracking-wider drop-shadow-lg">
+                                <img src="/images/sass.png" alt="" class="w-full mb-1">
+                                <p class="text-[0.8125rem] text-dark font-poppins font-medium capitalize text-center">scss</p>
+                            </div>
+                            <div class="tailwindcss w-[45px] h-[45px] rounded flex flex-col items-start justify-center text-white uppercase font-poppins font-medium tracking-wider drop-shadow-lg">
+                                <img src="/images/tailwindcss_logo_icon_167923.png" alt="" class="w-full mb-1">
+                                <p class="text-[0.8125rem] text-dark font-poppins font-medium capitalize text-center">tailwindcss</p>
+                            </div>
+                            <div class="javascript w-[45px] h-[45px] rounded flex flex-col items-start justify-center text-white uppercase font-poppins font-medium tracking-wider drop-shadow-lg">
+                                <img src="/images/javascript.png" alt="" class="w-full mb-1">
+                                <p class="text-[0.8125rem] text-dark font-poppins font-medium capitalize text-center">javascript</p>
+                            </div>
+                            <div class="photoshop w-[45px] h-[45px] rounded flex flex-col items-start justify-center text-white uppercase font-poppins font-medium tracking-wider drop-shadow-lg">
+                                <img src="/images/adobe-photoshop (1).png" alt="" class="w-full mb-1">
+                                <p class="text-[0.8125rem] text-dark font-poppins font-medium capitalize text-center">photoshop</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="right-content w-1/2 tabletL:w-full flex justify-end tabletL:justify-center">
+                         <div class="w-[470px] h-[470px] mobile:w-[370px] mobile:h-[370px]">
+                            <img src="../images/MY IMAGE.png" alt="" class="w-full h-full object-cover">
+                        </div>
+                    </div> -->
+                    
+                </div>
+
+          </div>
+      </section>
+
+      <!-- skills section
+      <section id="skills" class="skills w-full py-[116px] bg-dark-blue">
+        <div class="max-w-1/2 w-128 mx-auto">
+            <div class="about-word w-full mb-[73px] flex justify-center items-center">
+                <h3 class="title font-bold text-white relative after:absolute after:left-1/2 after:translate-x-[-50%] after:bottom-0 after:w-[100px] after:h-[4px] after:bg-green">skills</h3>
+            </div>
+
+            <div class="flex justify-center items-center gap-5 flex-wrap">
+                <div class="card bg-light-blue">
+                    <div class="skills-logo">
+                        <img src="../images/HTML GREEN.png" alt="">
+                    </div>
+                    <div class="skills-content">
+                        <h4 class="skills-name">html</h4>
+                        <p class="skills-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            In, tenetur animi. Sint quisquam mollitia similique
+                             enim in, cupiditate quia adipisci.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card bg-light-blue">
+                    <div class="skills-logo">
+                        <img src="../images/CSS GREEN.png" alt="">
+                    </div>
+                    <div class="skills-content">
+                        <h4 class="skills-name">css</h4>
+                        <p class="skills-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            In, tenetur animi. Sint quisquam mollitia similique
+                             enim in, cupiditate quia adipisci.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card bg-light-blue">
+                    <div class="skills-logo">
+                        <img src="../images/JAVASCRIPT GREEN.png" alt="">
+                    </div>
+                    <div class="skills-content">
+                        <h4 class="skills-name">javascript</h4>
+                        <p class="skills-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            In, tenetur animi. Sint quisquam mollitia similique
+                             enim in, cupiditate quia adipisci.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card bg-light-blue">
+                    <div class="skills-logo">
+                        <img src="../images/adobe-photoshop.png" alt="">
+                    </div>
+                    <div class="skills-content">
+                        <h4 class="skills-name">photoshop</h4>
+                        <p class="skills-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            In, tenetur animi. Sint quisquam mollitia similique
+                             enim in, cupiditate quia adipisci.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+      </section> -->
+
+      <!-- work section -->
+      <section id="work" class="work w-full bg-light-blue py-[6rem]">
+          <div class="work-container max-w-1/2 w-128 mx-auto">
+            <div class="work-word w-full mb-[73px] flex justify-center items-center">
+                <h3 class="title font-medium text-white relative after:absolute after:left-1/2 after:translate-x-[-50%] after:bottom-[-6px] after:w-[70px] after:h-[2px] after:bg-green">
+                    projects
+                </h3>
+            </div>
+
+            <div class="work-list flex justify-center gap-5 tabletL:flex-col drop-shadow-lg mb-[2rem]">
+
+                <!-- tip calculator -->
+                <div class="work-thumbnail w-[31.33%] tabletL:w-full rounded-xl overflow-hidden">
+                    <a href="https://fem-tip-calculator-website.netlify.app/" target="_blank" class="work-thumbnails rounded-t-xl">
+                        <div class="w-full overflow-hidden">
+                            <img src="../images/TIP CALCULATOR APP.jpg" alt="" class="object-cover rounded-t-xl hover:scale-105">
+                        </div>
+                    </a>
+
+                    <div class="work-info p-[1.25rem]">
+                        <a href="https://fem-tip-calculator-website.netlify.app/" target="_blank">
+                            <p class="project-title uppercase text-white text-[1.1875rem] font-poppins font-bold mb-[0.75rem] hover:underline">
+                                tip calculator
+                            </p>
+                        </a>
+                        <p class="project-info text-white font-poppins font-normal text-[0.9375rem] mb-[1.0625rem]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Libero iusto eum natus sunt aliquid nihil quod qui
+                              molestiae voluptates voluptatem!
+                        </p>
+                        <div class="tech-used flex flex-wrap gap-2">
+                             <div class="flex items-center justify-center rounded-md capitalize px-2 py-1 text-[0.875rem] text-white font-poppins font-normal bg-light-blue">html</div>
+                             <div class="flex items-center justify-center rounded-md capitalize px-2 py-1 text-[0.875rem] text-white font-poppins font-normal bg-light-blue">scss</div>
+                             <div class="flex items-center justify-center rounded-md capitalize px-2 py-1 text-[0.875rem] text-white font-poppins font-normal bg-light-blue">javascript</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- calculator app -->
+                <div class="work-thumbnail w-[31.33%] tabletL:w-full rounded-xl overflow-hidden drop-shadow-lg">
+                    <a href="https://nexuz-fem-calculator-app.netlify.app/" target="_blank" class="work-thumbnails w-full rounded-t-xl">
+                        <div class="w-full overflow-hidden">
+                           <img src="../images/CALCULATOR APP.jpg" alt="" class="object-cover rounded-t-xl hover:scale-105">
+                        </div>
+                    </a>
+
+                    <div class="work-info p-[1.25rem]">
+                        <a href="https://nexuz-fem-calculator-app.netlify.app/" target="_blank">
+                            <p class="project-title uppercase text-white text-[1.1875rem] font-poppins font-bold mb-[0.75rem] hover:underline">
+                                calculator app
+                            </p>
+                        </a>
+                        <p class="project-info text-white font-poppins font-normal text-[0.9375rem] mb-[1.0625rem]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Libero iusto eum natus sunt aliquid nihil quod qui
+                              molestiae voluptates voluptatem!
+                        </p>
+                        <div class="tech-used flex flex-wrap gap-2">
+                             <div class="flex items-center justify-center rounded-md capitalize px-2 py-1 text-[0.875rem] text-white font-poppins font-normal bg-light-blue">html</div>
+                             <div class="flex items-center justify-center rounded-md capitalize px-2 py-1 text-[0.875rem] text-white font-poppins font-normal bg-light-blue">scss</div>
+                             <div class="flex items-center justify-center rounded-md capitalize px-2 py-1 text-[0.875rem] text-white font-poppins font-normal bg-light-blue">javascript</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- easy bank landing page -->
+                <div class="work-thumbnail w-[31.33%] tabletL:w-full rounded-xl overflow-hidden drop-shadow-lg">
+                    <a href="https://femchallenge-easybank-landing-page.netlify.app/" target="_blank" class="work-thumbnails w-full rounded-t-xl">
+                        <div class="w-full overflow-hidden">
+                           <img src="../images/easy bank landing page.jpg" alt="" class="object-cover rounded-t-xl hover:scale-105">
+                        </div>
+                    </a>
+                    <div class="work-info p-[1.25rem]">
+                        <a href="https://femchallenge-easybank-landing-page.netlify.app/" target="_blank">
+                            <p class="project-title uppercase text-white text-[1.1875rem] font-poppins font-bold mb-[0.75rem] hover:underline">
+                                easy bank landing page
+                            </p>
+                        </a>
+                        <p class="project-info text-white font-poppins font-normal text-[0.9375rem] mb-[1.0625rem]">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Libero iusto eum natus sunt aliquid nihil quod qui
+                              molestiae voluptates voluptatem!
+                        </p>
+                        <div class="tech-used flex flex-wrap gap-2">
+                             <div class="flex items-center justify-center rounded-md capitalize px-2 py-1 text-[0.875rem] text-white font-poppins font-normal bg-light-blue">html</div>
+                             <div class="flex items-center justify-center rounded-md capitalize px-2 py-1 text-[0.875rem] text-white font-poppins font-normal bg-light-blue">scss</div>
+                             <div class="flex items-center justify-center rounded-md capitalize px-2 py-1 text-[0.875rem] text-white font-poppins font-normal bg-light-blue">javascript</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="link w-full flex justify-center">
+                <a href="./project.html" class="font-poppins font-bold text-[1rem] text-green underline hover:text-white">see more</a>
+            </div>
+          </div>
+      </section>
+
+      <!-- footer -->
+      <section id="contact" class="footer w-full h-auto bg-dark py-[3.375rem]">
+        <div class="max-w-1/2 w-128 mx-auto">
+
+            <div class="work-word w-full mb-[73px] flex justify-center items-center">
+                <h3 class="title font-medium text-white relative after:absolute after:left-1/2 after:translate-x-[-50%] after:bottom-[-6px] after:w-[70px] after:h-[2px] after:bg-green">
+                    contact
+                </h3>
+            </div>
+
+
+            <div class="footer-content w-full flex flex-wrap justify-between items-start 938:flex-col 938:items-center">
+
+
+                <div class="contact flex flex-col gap-6 mb-[3.8125rem]">
+
+                    <div class="sub max-w-[400px] 938:text-center">
+                        <p class="text-white font-poppins font-bold text-4xl capitalize mb-5">get in touch</p>
+                        <p class="text-white font-poppins font-normal text-[1rem]">Send me an email if you need any assistance or have any questions, and I will respond as soon as possible.</p>
+                    </div>
+
+                    <div class="number flex items-center gap-3 938:flex-col">
+                        <div class="number-logo w-[35px] h-[35px]">
+                            <img src="/images/calls.png" alt="" class="w-full">
+                        </div>
+                        <p class="font-poppins text-white font-normal">
+                            +63-912-910-2641
+                        </p>
+                    </div>
+
+                    <div class="email flex items-center gap-3 938:flex-col">
+                        <div class="email-logo w-[35px] h-[35px]">
+                            <img src="/images/email.png" alt="" class="w-full">
+                        </div>
+                        <p class="font-poppins text-white font-normal">
+                            floridaronel15@gmail.com
+                        </p>
+                    </div>
+
+                    <div class="location flex items-center gap-3 938:flex-col">
+                        <div class="location-logo w-[35px] h-[35px]">
+                            <img src="/images/location.png" alt="" class="w-full">
+                        </div>
+                        <div class="location-place 938:flex gap-3 flex-wrap justify-center">
+                            <p class="font-poppins text-white font-normal">Sto Nino, Rizal</p>
+                            <p class="font-poppins text-white font-normal">Occidental Mindoro</p>
+                            <p class="font-poppins text-white font-normal">Philippines</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- maps -->
+                <div class="drop-shadow-lg border-2 border-green rounded-sm mb-8 mobileL:w-[90%] mobileL:h-[90%]">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3895.7106203840617!2d121.01963731515222!3d12.46898222908018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bb05889ce7bb0f%3A0x8c2bc6086b1508cb!2sSto.%20Nino!5e0!3m2!1sen!2sph!4v1646103594978!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="mobileL:w-full mobileL:h-full"></iframe>
+                </div>
+
+                <!-- social media -->
+                <div class="social-media">
+                    <p class="text-white text-[1rem] font-poppins font-medium capitalize mb-2">social media :</p>
+                    <div class="social-media flex items-start justify-start gap-4">
+                        <div class="facebook bg-light-blue rounded-full overflow-hidden">
+                            <a href="https://web.facebook.com/ronel.florida.54" class="text-[1.875rem] mobileL:text-[1.25rem] mobileL:p-[1.25rem] p-[1.625rem] w-[2.5rem] h-[2.5rem] flex justify-center items-center hover:text-green hover:bg-white"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                        <div class="github bg-light-blue rounded-full overflow-hidden">
+                            <a href="https://github.com/Ronel028" class="text-[1.875rem] mobileL:text-[1.25rem] mobileL:p-[1.25rem] p-[1.625rem] w-[2.5rem] h-[2.5rem] flex justify-center items-center hover:text-green hover:bg-white"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+    <script src="../script/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0, 70%), rgba(0, 0, 0, 70%)), url(../images/Desktop\ Background.jpg);
+}
+@media screen and (max-width: 400px) {
+    header{
+        background-image: linear-gradient(rgba(0,0,0, 70%), rgba(0, 0, 0, 70%)), url(../images/Mobile\ Background.png); 
+    }  
+}
+@layer base{
+    a{
+        @apply text-white font-orbitron font-bold hover:text-green transition-all tabletM:text-[15px];
+    }
+    li{
+        @apply mr-right last:mr-0  tabletM:mr-[30px] tabletL:mr-[40px] mobile:m-0 mobile:p-[12px];
+    }
+    li#close-btn{
+        @apply p-0 mb-[30px];
+    }
+    h4,h1,h3{
+        @apply text-white font-orbitron
+    }
+    h3.title{
+        @apply text-[24px] font-poppins capitalize mobileL:text-[30px];
+    }
+    .box-dot, .circle, .triangle{
+        @apply opacity-[31%]
+    }
+    ul.nav-link{
+       @apply mobile:bg-background mobile:fixed mobile:top-[-100%] mobile:flex-col
+        mobile:items-center mobile:justify-center
+        mobile:pb-[31px] mobile:pt-[20px] mobile:w-[90%] mobile:rounded-lg
+        mobile:z-10;
+    }
+    div.card{
+        @apply py-[38px] px-[22px] rounded-lg w-[31.33%] 2xl:w-[100%];
+    }
+    /* div.skills-logo{
+        @apply mb-[14px]
+    }
+    h4.skills-name{
+        @apply mb-[23px] font-poppins font-bold text-[21px] uppercase
+    }
+    p.skills-content{
+        @apply text-white text-[1rem] font-normal 
+    }*/
+    div.work-thumbnail{
+        @apply bg-darkgreen
+    }
+}
